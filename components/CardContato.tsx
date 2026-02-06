@@ -40,14 +40,14 @@ export function CardContato(){
         )
     }
     return(
-        <Card>
+        <Card className="m-4">
             <CardContent>
-                <div className="w-full flex max-w-4xl mx-auto gap-20">
+                <div className="w-full md:flex  max-w-4xl mx-auto gap-20">
                     <div className="space-y-3.5 w-full max-w-xl">
                         <Avatar className="size-40">
                             <AvatarImage src="https://github.com/odiegodev1.png" />
                         </Avatar>
-                        <div className="space-y-1.5">
+                        <div className="space-y-1.5 md:mt-0 py-4">
                             <span className="text-zinc-400">Contato</span>
                             <h1 className="text-3xl font-bold line-clamp-2">Gostou do meu trabalho? Vamos trabalhar juntos!</h1>
                             <p className="text-zinc-600 mb-2">Estou sempre aberta a um bate-papo. Mande um e-mail para <span>odiegodev10@gmail.com</span> ou me chame nas redes sociais.</p>
