@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Kanit } from "next/font/google";
 import "./globals.css";
 import { Toaster, toast } from 'sonner';
+import { Analytics } from '@vercel/analytics/next';
 const geistSans = Kanit({
   variable: "--font-geist-sans",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -58,6 +59,7 @@ export default function RootLayout({
         className={`${geistSans.className} dark antialiased`}
       ><Toaster />
         {children}
+        <Analytics />
       </body>
     </html>
   );
