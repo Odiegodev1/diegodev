@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
-import { Kanit } from "next/font/google";
+import { Kanit, Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster, toast } from 'sonner';
+import { cn } from "@/lib/utils";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+
 const geistSans = Kanit({
   variable: "--font-geist-sans",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -53,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={cn("font-sans", inter.variable)}>
       <body
         className={`${geistSans.className} dark antialiased`}
       ><Toaster />

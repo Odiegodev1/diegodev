@@ -143,7 +143,7 @@ export function Cadrmyskill(){
       key={item.label}
       className="
         group
-        cursor-none
+        
         relative
         overflow-hidden
         transition-all
@@ -151,7 +151,7 @@ export function Cadrmyskill(){
         hover:scale-110
       "
     >
-      <div className="relative z-10 flex w-full cursor-none flex-col items-center justify-center gap-2 text-center">
+      <div className="relative z-10 flex w-full  flex-col items-center justify-center gap-2 text-center">
         {item.svg}
         <h1>{item.label}</h1>
       </div>
@@ -161,7 +161,7 @@ export function Cadrmyskill(){
         initialOffset={0}
         className="
           opacity-0
-          cursor-none
+          
           group-hover:opacity-100
           transition-opacity
           duration-300

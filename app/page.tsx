@@ -25,7 +25,7 @@ export default function Home() {
           
       </section>
 
-      <section className="w-full mb-20 space-y-7.5 mx-auto max-w-[1450]">
+      <section className="w-full mb-20  cursor-pointer space-y-7.5 mx-auto max-w-[1450]">
         <h1 className="mt-10 md:flex hidden text-4xl font-bold px-4">Sobre Mim</h1>
         <Sobremim />
         <h1 className="mt-10 text-4xl font-bold px-4">Minhas Habilidades</h1>
@@ -35,9 +35,7 @@ export default function Home() {
         <h1 className="mt-10 text-4xl font-bold px-4 ">Contato</h1>
         <CardContato />
       </section>
-      <Pointer>
-          <div className="text-2xl">👆🏾</div>
-        </Pointer>
+     
    </div>
   );
 }

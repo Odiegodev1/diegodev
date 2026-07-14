@@ -59,6 +59,3 @@ export type Project = {
         }
        
     ]
-
-
-  
