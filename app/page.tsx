@@ -47,7 +47,7 @@ export default function Home() {
       className="relative isolate min-h-screen overflow-hidden bg-black text-white"
     >
       {/* Background */}
-      <AuroraBackground />
+     
 
       {/* Navbar */}
 
