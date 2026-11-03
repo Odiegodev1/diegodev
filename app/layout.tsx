@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Kanit, Inter } from "next/font/google";
+import { Kanit, Inter, Zeyada } from "next/font/google";
 import "./globals.css";
 import { Toaster, toast } from 'sonner';
 import { cn } from "@/lib/utils";
-
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+import SidebarMenu from "./s/components/navbar";
+import "devicon/devicon.min.css";
+const inter = Zeyada({weight: ["400"], variable: '--font-sans'});
 
 const geistSans = Kanit({
   variable: "--font-geist-sans",
@@ -59,8 +60,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={cn("font-sans", inter.variable)}>
       <body
-        className={`${geistSans.className} dark antialiased`}
+        className={`${geistSans.className}  antialiased`}
       ><Toaster />
+       
         {children}
       </body>
     </html>
