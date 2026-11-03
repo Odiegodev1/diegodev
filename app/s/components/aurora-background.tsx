@@ -52,7 +52,7 @@ export default function AuroraBackground() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 overflow-hidden bg-black"
+      className="pointer-events-none md:flex hidden absolute inset-0 overflow-hidden bg-black"
     >
       {/* FILTRO SVG — DEFORMAÇÃO DAS ONDAS */}
       <svg
