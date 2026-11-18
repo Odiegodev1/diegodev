@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Kanit, Inter, Zeyada } from "next/font/google";
 import "./globals.css";
@@ -64,6 +65,10 @@ export default function RootLayout({
       ><Toaster />
        
         {children}
+         <Script
+    src="https://endereco-do-monitor.vercel.app/api/track"
+    strategy="afterInteractive"
+  />
       </body>
     </html>
   );
